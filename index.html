@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Zubair - Mobile Application Developer specializing in React Native development with 1+ year of hands-on experience.">
+    <title>Muhammad Zubair | Mobile Application Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ======= NAVBAR ======= -->
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" aria-label="Muhammad Zubair - Home">
+                <span class="logo-text">MZ</span><span class="logo-dot">.</span>
+            </a>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#home"      class="nav-link active" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about"     class="nav-link"        role="menuitem">About</a></li>
+                <li role="none"><a href="#skills"    class="nav-link"        role="menuitem">Skills</a></li>
+                <li role="none"><a href="#projects"  class="nav-link"        role="menuitem">Projects</a></li>
+                <li role="none"><a href="#education" class="nav-link"        role="menuitem">Education</a></li>
+                <li role="none"><a href="#contact"   class="nav-link"        role="menuitem">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <div class="nav-overlay" id="navOverlay"></div>
+    </nav>
+
+    <main>
+
+        <!-- ======= HERO SECTION ======= -->
+        <section id="home" class="hero" aria-label="Hero">
+            <!-- Background ambient orbs -->
+            <div class="hero-bg" aria-hidden="true">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <div class="grid-pattern"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-grid">
+
+                    <!-- Left: Text content -->
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="badge-pulse"></span>
+                            Available for Opportunities
+                        </div>
+
+                        <h1 class="hero-name">
+                            Muhammad<br>
+                            <span class="gradient-text">Zubair</span>
+                        </h1>
+
+                        <div class="hero-title-wrap">
+                            <span class="title-static">I'm a </span>
+                            <span class="typewriter-container">
+                                <span id="typewriterText" class="typewriter-text"></span>
+                                <span class="cursor" aria-hidden="true">|</span>
+                            </span>
+                        </div>
+
+                        <p class="hero-description">
+                            I build high-performance and scalable mobile applications with clean
+                            architecture, optimized performance, and modern development practices.
+                            With around <strong>1 year</strong> of hands-on experience, I specialize in
+                            <strong>React Native</strong> mobile application development.
+                        </p>
+
+                        <div class="hero-stats" aria-label="Quick stats">
+                            <div class="stat-item">
+                                <span class="stat-num">1+</span>
+                                <span class="stat-lbl">Years Exp.</span>
+                            </div>
+                            <div class="stat-sep" aria-hidden="true"></div>
+                            <div class="stat-item">
+                                <span class="stat-num">10+</span>
+                                <span class="stat-lbl">Projects</span>
+                            </div>
+                            <div class="stat-sep" aria-hidden="true"></div>
+                            <div class="stat-item">
+                                <span class="stat-num">11+</span>
+                                <span class="stat-lbl">Technologies</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">
+                                View Projects
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="#contact" class="btn btn-outline">Contact Me</a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Code editor visual -->
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="code-editor">
+                            <div class="editor-titlebar">
+                                <div class="editor-dots">
+                                    <span class="dot dot-red"></span>
+                                    <span class="dot dot-yellow"></span>
+                                    <span class="dot dot-green"></span>
+                                </div>
+                                <span class="editor-filename">App.tsx</span>
+                                <span class="editor-lang">TypeScript</span>
+                            </div>
+                            <div class="editor-body">
+                                <div class="line-nums">
+                                    <span>1</span><span>2</span><span>3</span><span>4</span>
+                                    <span>5</span><span>6</span><span>7</span><span>8</span>
+                                    <span>9</span><span>10</span><span>11</span><span>12</span>
+                                    <span>13</span><span>14</span><span>15</span><span>16</span>
+                                    <span>17</span>
+                                </div>
+                                <div class="code-lines">
+                                    <div class="cl"><span class="kw">import</span> React, &#123; useState &#125; <span class="kw">from</span> <span class="str">'react'</span>;</div>
+                                    <div class="cl"><span class="kw">import</span> &#123; View, Text &#125; <span class="kw">from</span> <span class="str">'react-native'</span>;</div>
+                                    <div class="cl"><span class="kw">import</span> &#123; useAppDispatch &#125; <span class="kw">from</span> <span class="str">'./store'</span>;</div>
+                                    <div class="cl empty"></div>
+                                    <div class="cl"><span class="kw">interface</span> <span class="tp">AppProps</span> &#123;</div>
+                                    <div class="cl">&nbsp;&nbsp;theme: <span class="str">'dark'</span> | <span class="str">'light'</span>;</div>
+                                    <div class="cl">&#125;</div>
+                                    <div class="cl empty"></div>
+                                    <div class="cl"><span class="kw">const</span> <span class="fn">App</span>: React.FC&lt;<span class="tp">AppProps</span>&gt; = () =&gt; &#123;</div>
+                                    <div class="cl">&nbsp;&nbsp;<span class="kw">const</span> [active, setActive] = <span class="fn">useState</span>(<span class="bl">false</span>);</div>
+                                    <div class="cl">&nbsp;&nbsp;<span class="kw">const</span> dispatch = <span class="fn">useAppDispatch</span>();</div>
+                                    <div class="cl empty"></div>
+                                    <div class="cl">&nbsp;&nbsp;<span class="kw">return</span> (</div>
+                                    <div class="cl">&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tg">View</span> style=&#123;styles.container&#125;&gt;</div>
+                                    <div class="cl">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="tg">Text</span>&gt;Hello World&lt;/<span class="tg">Text</span>&gt;</div>
+                                    <div class="cl">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="tg">View</span>&gt;</div>
+                                    <div class="cl">&nbsp;&nbsp;);</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating skill pills -->
+                        <div class="float-pill pill-1">
+                            <span class="pill-icon blue">RN</span>
+                            <div>
+                                <div class="pill-name">React Native</div>
+                                <div class="pill-sub">Mobile Dev</div>
+                            </div>
+                        </div>
+                        <div class="float-pill pill-2">
+                            <span class="pill-icon violet">TS</span>
+                            <div>
+                                <div class="pill-name">TypeScript</div>
+                                <div class="pill-sub">Type Safety</div>
+                            </div>
+                        </div>
+                        <div class="float-pill pill-3">
+                            <span class="pill-icon emerald">RDX</span>
+                            <div>
+                                <div class="pill-name">Redux Toolkit</div>
+                                <div class="pill-sub">State Mgmt</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="scroll-cue" aria-hidden="true">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <!-- ======= ABOUT SECTION ======= -->
+        <section id="about" class="about section" aria-labelledby="about-heading">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-tag">About Me</span>
+                    <h2 id="about-heading" class="section-title">Who I Am</h2>
+                    <p class="section-sub">A passionate mobile developer building impactful experiences</p>
+                </header>
+
+                <div class="about-grid">
+                    <article class="about-card glass-card reveal">
+                        <h3>My Story</h3>
+                        <p>
+                            Passionate mobile developer focused on building smooth, maintainable,
+                            and performance-driven applications. Experienced in creating reusable
+                            components, integrating REST APIs, and managing complex application states
+                            with Redux Toolkit.
+                        </p>
+                        <p>
+                            I believe in writing clean, well-structured code that stands the test of time.
+                            My approach combines modern development practices with a deep understanding
+                            of mobile user experience to deliver applications that users love.
+                        </p>
+                        <ul class="about-highlights">
+                            <li>
+                                <span class="hl-dot blue" aria-hidden="true"></span>
+                                Clean Architecture &amp; Reusable Components
+                            </li>
+                            <li>
+                                <span class="hl-dot violet" aria-hidden="true"></span>
+                                Advanced State Management with Redux
+                            </li>
+                            <li>
+                                <span class="hl-dot emerald" aria-hidden="true"></span>
+                                Optimized API Integration &amp; Performance
+                            </li>
+                            <li>
+                                <span class="hl-dot blue" aria-hidden="true"></span>
+                                Form Handling with Formik &amp; Yup Validation
+                            </li>
+                        </ul>
+                    </article>
+
+                    <div class="about-stats reveal">
+                        <div class="astat glass-card">
+                            <span class="astat-num gradient-text">1+</span>
+                            <span class="astat-lbl">Year of Experience</span>
+                        </div>
+                        <div class="astat glass-card">
+                            <span class="astat-num gradient-text-v">10+</span>
+                            <span class="astat-lbl">Projects Completed</span>
+                        </div>
+                        <div class="astat glass-card">
+                            <span class="astat-num gradient-text-e">11+</span>
+                            <span class="astat-lbl">Technologies Mastered</span>
+                        </div>
+                        <div class="astat glass-card">
+                            <span class="astat-num gradient-text">100%</span>
+                            <span class="astat-lbl">Dedication &amp; Passion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SKILLS SECTION ======= -->
+        <section id="skills" class="skills section" aria-labelledby="skills-heading">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-tag">Technical Skills</span>
+                    <h2 id="skills-heading" class="section-title">My Expertise</h2>
+                    <p class="section-sub">Technologies and tools I work with every day</p>
+                </header>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon blue">RN</div>
+                        <div class="sk-info">
+                            <h3>React Native</h3>
+                            <p>Cross-platform mobile apps</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon blue">TS</div>
+                        <div class="sk-info">
+                            <h3>TypeScript</h3>
+                            <p>Typed JavaScript at scale</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon amber">JS</div>
+                        <div class="sk-info">
+                            <h3>JavaScript</h3>
+                            <p>ES6+ modern features</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon violet">RDX</div>
+                        <div class="sk-info">
+                            <h3>Redux Toolkit</h3>
+                            <p>Predictable state container</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon emerald">API</div>
+                        <div class="sk-info">
+                            <h3>REST APIs</h3>
+                            <p>Efficient API integration</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon violet">FMK</div>
+                        <div class="sk-info">
+                            <h3>Formik</h3>
+                            <p>Form state management</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon emerald">YUP</div>
+                        <div class="sk-info">
+                            <h3>Yup Validation</h3>
+                            <p>Schema-based validation</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon blue">AS</div>
+                        <div class="sk-info">
+                            <h3>AsyncStorage</h3>
+                            <p>Local data persistence</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon violet">STM</div>
+                        <div class="sk-info">
+                            <h3>State Management</h3>
+                            <p>Complex app state handling</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon emerald">PRF</div>
+                        <div class="sk-info">
+                            <h3>Performance Opt.</h3>
+                            <p>Smooth &amp; optimized UX</p>
+                        </div>
+                    </div>
+
+                    <div class="skill-card glass-card reveal">
+                        <div class="sk-icon blue">UI</div>
+                        <div class="sk-info">
+                            <h3>Custom UI Components</h3>
+                            <p>Reusable component design</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= PROJECTS SECTION ======= -->
+        <section id="projects" class="projects section" aria-labelledby="projects-heading">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-tag">Projects</span>
+                    <h2 id="projects-heading" class="section-title">Featured Work</h2>
+                    <p class="section-sub">A selection of projects I've built and shipped</p>
+                </header>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-top blue-gradient">
+                            <div class="project-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                    <path d="M8 21h8M12 17v4"/>
+                                    <path d="M7 8h2M11 8h6M7 11h4M13 11h4"/>
+                                </svg>
+                            </div>
+                            <div class="project-number">01</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Custom UI Component Library</h3>
+                            <p class="project-desc">
+                                Designed and built reusable mobile UI components including custom radio buttons,
+                                card wrappers, modal components, and form elements with clean, consistent layouts
+                                across the entire application.
+                            </p>
+                            <ul class="project-features">
+                                <li>Reusable component architecture</li>
+                                <li>Responsive &amp; accessible UI</li>
+                                <li>Clean, maintainable design system</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag blue">React Native</span>
+                                <span class="stack-tag violet">TypeScript</span>
+                                <span class="stack-tag emerald">StyleSheet</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <button class="btn-project" aria-label="View Custom UI Component Library details">
+                                View Details
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-top violet-gradient">
+                            <div class="project-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="project-number">02</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Optimized API Integration System</h3>
+                            <p class="project-desc">
+                                Implemented an efficient API handling architecture using context-based data
+                                fetching strategies to significantly reduce unnecessary API calls and improve
+                                navigation performance throughout the application.
+                            </p>
+                            <ul class="project-features">
+                                <li>Context-based fetch optimization</li>
+                                <li>Reduced redundant API calls</li>
+                                <li>Smoother navigation experience</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag blue">React Native</span>
+                                <span class="stack-tag amber">JavaScript</span>
+                                <span class="stack-tag emerald">REST API</span>
+                                <span class="stack-tag violet">Context API</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <button class="btn-project" aria-label="View Optimized API Integration System details">
+                                View Details
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card glass-card reveal">
+                        <div class="project-top emerald-gradient">
+                            <div class="project-icon-wrap">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <path d="M9 12l2 2 4-4"/>
+                                </svg>
+                            </div>
+                            <div class="project-number">03</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">State Management Architecture</h3>
+                            <p class="project-desc">
+                                Built a scalable state management solution using Redux Toolkit with async thunks,
+                                proper slice architecture, and Formik + Yup form validation integrated across
+                                multiple complex forms in a production mobile application.
+                            </p>
+                            <ul class="project-features">
+                                <li>Redux Toolkit slice architecture</li>
+                                <li>Async thunk data fetching</li>
+                                <li>Form validation with Formik &amp; Yup</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag violet">Redux Toolkit</span>
+                                <span class="stack-tag blue">TypeScript</span>
+                                <span class="stack-tag emerald">Formik</span>
+                                <span class="stack-tag amber">Yup</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <button class="btn-project" aria-label="View State Management Architecture details">
+                                View Details
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <path d="M7 17L17 7M17 7H7M17 7v10"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= EDUCATION SECTION ======= -->
+        <section id="education" class="education section" aria-labelledby="education-heading">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-tag">Education</span>
+                    <h2 id="education-heading" class="section-title">Academic Background</h2>
+                    <p class="section-sub">The foundation of my technical knowledge</p>
+                </header>
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-line"></div>
+                        </div>
+                        <article class="timeline-card glass-card">
+                            <div class="tc-header">
+                                <div class="tc-icon-wrap">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="tc-badge">Bachelor's Degree</span>
+                                    <span class="tc-year">2020 — 2024</span>
+                                </div>
+                            </div>
+                            <h3 class="tc-title">Bachelor of Science in Computer Science</h3>
+                            <p class="tc-institution">University Name</p>
+                            <p class="tc-desc">
+                                Studied core computer science fundamentals including data structures,
+                                algorithms, software engineering principles, mobile development, and
+                                modern programming paradigms. Built a strong foundation in problem-solving
+                                and software architecture.
+                            </p>
+                            <div class="tc-tags">
+                                <span class="tc-tag">Data Structures</span>
+                                <span class="tc-tag">Algorithms</span>
+                                <span class="tc-tag">Software Engineering</span>
+                                <span class="tc-tag">Mobile Dev</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="timeline-item reveal">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot alt"></div>
+                        </div>
+                        <article class="timeline-card glass-card">
+                            <div class="tc-header">
+                                <div class="tc-icon-wrap alt">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 8v4l3 3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="tc-badge alt">Self-Learning</span>
+                                    <span class="tc-year">2023 — Present</span>
+                                </div>
+                            </div>
+                            <h3 class="tc-title">React Native &amp; Mobile Development</h3>
+                            <p class="tc-institution">Online Courses &amp; Hands-on Projects</p>
+                            <p class="tc-desc">
+                                Continuously expanding knowledge through official documentation, community
+                                resources, and real-world project development. Focused on best practices,
+                                performance optimization, and modern React Native ecosystem tools.
+                            </p>
+                            <div class="tc-tags">
+                                <span class="tc-tag">React Native</span>
+                                <span class="tc-tag">TypeScript</span>
+                                <span class="tc-tag">Redux Toolkit</span>
+                                <span class="tc-tag">REST APIs</span>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= CONTACT SECTION ======= -->
+        <section id="contact" class="contact section" aria-labelledby="contact-heading">
+            <div class="container">
+                <header class="section-header reveal">
+                    <span class="section-tag">Contact</span>
+                    <h2 id="contact-heading" class="section-title">Let's Connect</h2>
+                    <p class="section-sub">Have a project in mind? Let's build something great together.</p>
+                </header>
+
+                <div class="contact-grid">
+
+                    <!-- Contact Info -->
+                    <div class="contact-info reveal">
+                        <div class="ci-card glass-card">
+                            <h3>Get In Touch</h3>
+                            <p>
+                                I'm actively looking for new opportunities. Whether you have a project,
+                                a question, or just want to say hi — my inbox is always open.
+                            </p>
+
+                            <div class="ci-links">
+                                <a href="mailto:muhammadzubair@example.com" class="ci-link">
+                                    <span class="ci-icon-wrap emerald">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                            <polyline points="22,6 12,13 2,6"/>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span class="ci-lbl">Email</span>
+                                        <span class="ci-val">muhammadzubair@example.com</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="ci-link">
+                                    <span class="ci-icon-wrap blue">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span class="ci-lbl">GitHub</span>
+                                        <span class="ci-val">github.com/muhammadzubair</span>
+                                    </div>
+                                </a>
+
+                                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="ci-link">
+                                    <span class="ci-icon-wrap violet">
+                                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                        </svg>
+                                    </span>
+                                    <div>
+                                        <span class="ci-lbl">LinkedIn</span>
+                                        <span class="ci-val">linkedin.com/in/muhammadzubair</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrap reveal">
+                        <form class="contact-form glass-card" id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name">
+                                <span class="form-error" id="nameError" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+                                <span class="form-error" id="emailError" aria-live="polite"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                                <span class="form-error" id="messageError" aria-live="polite"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                                <span id="btnText">Send Message</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <line x1="22" y1="2" x2="11" y2="13"/>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                                </svg>
+                            </button>
+                            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Message sent! I'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="nav-logo">
+                        <span class="logo-text">MZ</span><span class="logo-dot">.</span>
+                    </a>
+                    <p>Building high-performance mobile experiences with React Native.</p>
+                </div>
+                <nav class="footer-links" aria-label="Footer navigation">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <div class="footer-social">
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:muhammadzubair@example.com" aria-label="Send email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Muhammad Zubair. All rights reserved.</p>
+                <p class="footer-made">Crafted with passion &amp; clean code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
